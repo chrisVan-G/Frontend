@@ -1,0 +1,15 @@
+#header1 {
+    color:green;
+}
+
+h1 {
+    color:red;
+}
+
+.navigation {
+    color:green;
+}
+
+.navigation:hover {
+    color:orange;
+}
