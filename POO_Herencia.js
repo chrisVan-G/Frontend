@@ -4,6 +4,8 @@ let bird = {
   hasFeathers: true,
 };
 
+//La herencia en JavaScript se basa en el objeto del prototipo.
+
 var eagle = Object.create(bird);
 console.log('Eagle: ', eagle);
 
