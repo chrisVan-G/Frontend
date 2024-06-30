@@ -5,7 +5,7 @@ function addFive(val) {
 module.exports = addFive;
 
 // Comandos
-// npm install --save-dev jest?
+// npm install --save-dev jest
 // npm init -y
 // Para poder ejecutar los archivos de esta carpeta se debe instalar jest y hacer los ajustes
 // en el archivo package.json => "test": "jest"
