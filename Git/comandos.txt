@@ -1,0 +1,15 @@
+Línea de comandos, Comandos básicos Unix
+
+cd cambiar de directorio
+cd .. volver al directorio anterior
+touch crea un nuevo archivo del tipo que se especifique, para que funcione touch debo usar este comando en Windows npm install touch-cli -g
+mkdir nombreCarpeta para crear una nueva carpeta
+history Historial de comandos utilizados recientemente
+man manual
+man ls instrucciones sobre el comando de listas
+marcas, se utilizan para nodificar el comportamiento de un comando
+ls -l lista el archivo en orden de lista
+ls -a lista todos los archivos y directorios, incluidos los ocultos
+pwd muestra la ruta completa del directorio de trabajo actual
+cp copiar
+mv mover
