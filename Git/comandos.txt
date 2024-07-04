@@ -1,15 +1,76 @@
 Línea de comandos, Comandos básicos Unix
 
-cd cambiar de directorio
-cd .. volver al directorio anterior
-touch crea un nuevo archivo del tipo que se especifique, para que funcione touch debo usar este comando en Windows npm install touch-cli -g
-mkdir nombreCarpeta para crear una nueva carpeta
-history Historial de comandos utilizados recientemente
-man manual
-man ls instrucciones sobre el comando de listas
-marcas, se utilizan para nodificar el comportamiento de un comando
-ls -l lista el archivo en orden de lista
-ls -a lista todos los archivos y directorios, incluidos los ocultos
-pwd muestra la ruta completa del directorio de trabajo actual
-cp copiar
-mv mover
+cd Cambiar el directorio
+cd .. volver
+ls Comando de lista que se utiliza para mostrar el contenido de un directorio
+rm Comando de eliminación que se utiliza para eliminar un archivo o un directorio
+mv Se utiliza para mover archivos o carpetas a otra ubicación
+touch Permite crear un nuevo archivo vacío o actualizar una marca de tiempo en un archivo
+cp Se utiliza para hacer una copia de un archivo o carpeta
+mkdir Crea un nuevo directorio
+pwd Imprime el directorio de trabajo y muestra la ubicación actual en el shell
+cat Permite leer o concatenar un archivo
+less Muestra el contenido de un archivo página por página
+grep Expresión regular global que permite buscar el contenido de archivos o carpetas
+
+Banderas
+ls -l
+
+cd ~
+ls -la
+less .archivoX
+
+Vim test.sh
+i para insertar
+#!/bin/bash
+echo "Hola Mundo!"
+:wq para salir
+chmod 755 test.sh para adicionar permisos de ejecución(para que el archivo sea ejecutable)
+para ejecutarlo uso 
+./test.sh
+cd / para ir a la raiz 
+pwd para saber donde estoy
+
+mv ejemplo
+mv proyectos archivo
+
+wc recuento de palabras
+wc text.txt -w
+
+pipes permite usar la salida de un comando como la entrada de otro
+ls | wc -w
+Recuento de palabras con pipe
+cat text.txt | wc -w 
+
+Recuento de palabras de 2 archivos
+cat text.txt text2.txt | wc -w 
+
+Redireccionamiento
+
+cat esta configurado para tomar entradas
+
+Recibir entradas
+cat > input.txt
+adiciono el texto
+ctrl + d para indicar que es el final del archivo
+
+Recibir salidas
+cat < input.txt
+less output aplica el ultimo comando utilizado al archivo seleccionado
+
+0 input
+1 output salida estandar
+2 error
+<input.txt>output.txt 2>error.txt
+
+ls -l /bin/usr 2 > error.txt
+ls -l /bin/usr > error_output.txt 2>&1
+
+Grep impresión global de expresiones regulares
+Se utiliza para buscar en archivos, carpetas y en el contenido de los archivos
+
+grep da names.txt
+grep -i da names.txt es estricto en que 'da' este al principio del nombre
+grep -w da names.txt coincidencia exacta
+
+ls /bin | grep zip

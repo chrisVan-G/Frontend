@@ -1,0 +1,5 @@
+total 3
+-rw-r--r-- 1 cvanegas 1049089 108 Jul  4 13:22 input.txt
+-rw-r--r-- 1 cvanegas 1049089   0 Jul  4 13:25 output.txt
+-rw-r--r-- 1 cvanegas 1049089 638 Jul  4 12:44 text.txt
+-rw-r--r-- 1 cvanegas 1049089 520 Jul  4 12:44 text2.txt
