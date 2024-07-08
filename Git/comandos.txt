@@ -74,3 +74,5 @@ grep -i da names.txt es estricto en que 'da' este al principio del nombre
 grep -w da names.txt coincidencia exacta
 
 ls /bin | grep zip
+
+En linux cualquier carpeta que inicie con un punto(.) es una carpeta oculta

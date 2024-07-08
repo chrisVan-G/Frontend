@@ -1,0 +1,5 @@
+Comandos
+
+git restore --stage nombreArchivo => deshace un git add nombreArchivo
+git checkout -B nuevaRama => crea la rama y me ubica sobre ella
+git branch nuevaRama_2 => crea la rama
