@@ -4,10 +4,49 @@ git restore --stage nombreArchivo => deshace un git add nombreArchivo
 git checkout -B nuevaRama => crea la rama y me ubica sobre ella
 git branch nuevaRama_2 => crea la rama
 
-Iniciar un repositorio con comandos Github CLI (no esta completo, consultar)
+Iniciar un repositorio con comandos Github CLI (sin completar, consultar)
 gh auth login
 Github.com - HTTPS - Y - Paste an authentication token - pegarToken
 gh repo clone userNameDeGitHub/<REPOSITORY-NAME>
 cd <REPOSITORY-NAME>
 En las opciones de Github para clonar utilizar Github CLI 
 gh repo clone chrisVan-G/repo-exercise
+
+HEAD
+
+cd .git
+cat HEAD
+cat refs/heads/master
+cat .git/HEAD
+
+DIFF
+
+vim comandosGit.txt
+
+Comparar 
+- archivos
+git diff HEAD comandosGit.txt
+git log --pretty=oneline para tener una salida más legible
+- commits
+git diff b5fbd6e286585e544c10f0ae22b15da5289d66fd bfe5cdb626548f517d9a1f322577a547079c8112
+- ramas
+git diff master Work
+
+Blame
+
+git blame archivo.ext
+git blame -L 15,20 archivo.ext
+Se puede cambiar el formato en el que se muestra la lista
+git blame -l archivo.ext
+git log -p fc765cce muestra cambios
+
+blame muestra el punto en el que se modifico y git log mostrará el detalle del cambio
+
+Hoja de trucos de Git
+https://education.github.com/git-cheat-sheet-education.pdf
+
+Patrones y antipatrones Git para desarrolladores exitosos 
+https://youtu.be/t_4lLR6F_yk
+
+Hoja de trucos de Vim
+https://devhints.io/vim
