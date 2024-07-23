@@ -76,15 +76,3 @@ grep -w da names.txt coincidencia exacta
 ls /bin | grep zip
 
 En linux cualquier carpeta que inicie con un punto(.) es una carpeta oculta
-
-Adicionar un alias
-git config --global alias.co checkout
-... alias.ci commit
-... alias.st status
-... alias.br branch
-
-Verificar los alias que tengo
-git config --list
-
-Eliminar un alias 
-git config --global --unset alias.nombreDelAlias
