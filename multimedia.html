@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media</title>
+  </head>
+  <body>
+    <h1>Elementos multimedia</h1>
+    <div>
+      <h2>Video</h2>
+      <video width="320" height="240" controls>
+        <source src="./media/videoTest.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <hr />
+    <div>
+      <h2>Audio</h2>
+      <audio loop controls>
+        <source src="./media/audioTest.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+    <hr />
+    <div>
+      <h2>Imagenes</h2>
+      <figure>
+        <img
+          src="./img/img2.jpg"
+          alt="Cultivo de cilantro"
+          width="440"
+          height="280"
+        />
+        <figcaption>Muestra de método de cultivo de cilantro</figcaption>
+      </figure>
+      <!-- puede especificar el ancho y la altura de la imagen con los atributos width y height -->
+    </div>
+    <hr />
+    <div>
+      <h2>iframe</h2>
+      <iframe
+        src="https://htmlreference.io/element/iframe/"
+        width="1200"
+        height="550"
+        allow="micophone 'none'; camera 'none';"
+        sandbox=""
+      ></iframe>
+      <!-- sandbox cuando el valor de este atributo está vacío, se aplican todas las restricciones -->
+    </div>
+    <hr />
+    <div>
+      <h2>iframe con imagen</h2>
+      <iframe
+        src="./img/img.webp"
+        width="800"
+        height="600"
+        sandbox
+        allow="payment 'none'; camera 'none'; microphone 'none';"
+      ></iframe>
+      <!-- Se usa una imagen mientras se recibe la url asignada -->
+    </div>
+    <hr />
+    <div>
+      <h2>El elemento canvas</h2>
+      <canvas width="640" height="480" id="my_canvas"> </canvas>
+      <script src="multimedia.js"></script>
+    </div>
+  </body>
+</html>
