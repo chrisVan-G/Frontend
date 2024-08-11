@@ -1,0 +1,37 @@
+.box {
+    background-color: darkblue;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.flex-container{
+    display:flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.flex.container{
+    flex: 0 1 auto;
+}
+
+/*
+Propiedades de alineación 
+justify-content. Para alineación de elementos en el eje principal.
+align-items. Para alineación de elementos en el eje transversal.
+align-self. Para elementos flexibles únicos en el eje transversal.
+align-content. Se utiliza para empaquetar líneas flexibles y controlar el espacio
+*/
+
+.box3 {
+    background-color: aquamarine;
+    color: blue;
+    align-self: center;
+    flex: 1 1 auto;
+}
+
+/* flex-grow, flex-shrink y flex-basis */
