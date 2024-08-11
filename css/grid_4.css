@@ -1,0 +1,31 @@
+body {
+    display: grid;
+    height: 536px;
+    grid-template-areas:    "head head" 
+                            "nav main" 
+                            "footer footer";
+    grid-template-rows: 30px 1fr 30px;
+    grid-template-columns: 150px 1fr;
+}
+
+/* El "encabezado" se escribe dos veces para 
+dar a entender que hay dos columnas y el resto 
+del contenido sigue la convención habitual. 
+El número de filas será el número de 
+"pares de comillas" que ha utilizado, que en 
+este caso es tres */
+
+header {
+    grid-area: head;
+    background-color: lightsalmon;
+}
+
+.nav-bar {
+    grid-area: nav;
+    background-color: lightblue;
+}
+
+footer {
+    grid-area: footer;
+    background-color: orangered;
+}
