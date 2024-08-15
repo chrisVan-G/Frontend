@@ -1,0 +1,24 @@
+/* Transformaciones y transiciones CSS
+
+Sintax
+
+element {
+    transform: value;
+}
+
+element {
+    transition: value;
+} */
+
+.a{
+    margin: 30px;
+    transform: skewX(20deg);
+    transition: 5s;
+    /* deg = grados */
+}
+
+.b{
+    margin: 100px;
+    transform: rotate(20deg);
+    transition: 5s;
+}
