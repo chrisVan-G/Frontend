@@ -1,0 +1,62 @@
+* {
+    list-style: none;
+}
+
+body {
+    color: #333333;
+    background-color: #EE9972;
+    font-family: Cambria;
+}
+
+div ~ ul {
+    background-color: #EDEFEE;
+    color: #495E57;
+    box-shadow: 1px 1px 3px #333333;
+    padding: 10px;
+    /* ~ selector de hermanos */
+}
+
+/* 
+Jerarquía de especificidad
+
+Estilos en línea
+Identificaciones - Ids
+Clases, atributos y pseudoclases
+Elementos y pseudoelementos
+
+Pseudoclases que funcionan cuando el usuario interactua con el elemento HTML
+
+:hover - cambia el estilo de un elemento cuando el cursor esta sobre el
+:active - cambia el estilo cuando el usuario presiona y sostiene activamente el botón del ratón
+:focus - aplica estilo al elemento para el que se utiliza
+
+Funcionan cuando el usuario interactua con el elemento HTML
+
+Pseudoclases para formularios
+
+:disabled and :enabled - usadas para botones
+:checked and :indeterminate - usado para casillas de verificación
+:valid and :invalid - utilizado en casos de campos como e-mail o números telefónicos
+
+Pseudoclases de estados específicos basados en posición
+
+:first-of-type - modifico el estilo del primer elemento de un tipo determinado
+:last-of-type - 
+:nth-of-type() - 
+:nth-last-of-type() - 
+
+Pseudoelementos
+
+Sintaxis
+selector::pseudo-element {
+ property: value; 
+}
+
+::first-letter
+Ejemplo li::first-letter {}
+::first-line
+::selection
+::marker
+::before y ::after
+
+*/
