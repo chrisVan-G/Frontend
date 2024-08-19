@@ -1,0 +1,26 @@
+/* 
+Orden para aplicar los estilos de pseudoclase
+LVHA => Link, visited, hover(pasar el cursor), active 
+*/
+
+* {
+    font-family: cursive;
+    background-color: #E0E0E2;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: white;
+    background-color: black;
+}
