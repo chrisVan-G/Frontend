@@ -1,0 +1,53 @@
+body {
+    display: grid;
+    height: 710px;
+    grid-template-areas: "head head head"
+                         "nav nav nav"
+                         "section section section"
+                         "art art art"
+                         "footer footer footer";
+    grid-template-rows: 100px 60px 60px 1fr 80px;
+    grid-template-columns: 525px 525px 525px;
+}
+
+header {
+    grid-area: head;
+    background-color: aquamarine;
+}
+
+.nav-bar {
+    grid-area: nav;
+    background-color: aqua;
+}
+
+section {
+    grid-area: section;
+    background-color: darkgreen;
+    color: white;
+}
+
+footer {
+    grid-area: footer;
+    background-color: chartreuse;
+}
+
+.content {
+    grid-area: cont;
+    background-color: cornflowerblue;
+}
+
+.art {
+    grid-area: art;
+}
+
+.art-1 {
+    background-color: cadetblue;
+}
+
+.art-2 {
+    background-color: blue;
+}
+
+.art-3 {
+    background-color: cornflowerblue;
+}
