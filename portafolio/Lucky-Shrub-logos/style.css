@@ -3,11 +3,11 @@ body {
     height: 710px;
     grid-template-areas: "head head head"
                          "nav nav nav"
-                         "section section section"
+                         "main main main"
                          "art art art"
                          "footer footer footer";
-    grid-template-rows: 100px 60px 60px 1fr 80px;
-    grid-template-columns: 525px 525px 525px;
+    grid-template-rows: 150px 50px 60px 1fr 80px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 header {
@@ -15,20 +15,23 @@ header {
     background-color: aquamarine;
 }
 
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+    height: 140px;
+}
+
 .nav-bar {
     grid-area: nav;
     background-color: aqua;
 }
 
-section {
-    grid-area: section;
+main {
+    grid-area: main;
     background-color: darkgreen;
     color: white;
-}
-
-footer {
-    grid-area: footer;
-    background-color: chartreuse;
 }
 
 .content {
@@ -50,4 +53,14 @@ footer {
 
 .art-3 {
     background-color: cornflowerblue;
+}
+
+footer {
+    grid-area: footer;
+    background-color: chartreuse;
+}
+
+.logo-fot {
+    width: 70px;
+    height: 70px;
 }
