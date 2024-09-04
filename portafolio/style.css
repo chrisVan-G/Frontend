@@ -1,0 +1,131 @@
+body {
+    color: #FFFFFF;
+    background-color: #B2DFDB;
+    font-family: "Oswald", sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 7rem;
+    margin-top: 1rem;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #c119f0;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+}
+
+footer div {
+    flex: 1;
+}
+
+.img-hed {
+    width: 10rem;
+    height: 10rem;
+}
+
+.img-fot {
+    width: 4rem;
+    height: 4rem;
+}
+
+.copy {
+    color: #212121;
+    align-self: flex-end;
+}
+
+picture > img {
+    width: 25rem;
+    height: 25rem;
+}
+
+.card-1, .card-2, .card-3 {
+    background-color: #009688;
+    margin: 1rem 1rem auto 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.card-1:hover {
+    background-color: #79c9ee;
+}
+
+.card-2:hover {
+    background-color: #79c9ee;
+}
+
+.card-3:hover {
+    background-color: #79c9ee;
+}
+
+.promo {
+    background-image: url('orquideas.webp');
+    background-size: 50% auto; 
+    border-radius: 1rem;
+    text-align: center;
+    /* color: #00BCD4; */
+    color:#212121;
+}
+
+h1:hover {
+    color: #c119f0;
+    transform: rotate(20deg);
+    transition: 2s;
+}
+
+.nav-bar {
+    background-color: #BDBDBD;
+    border-radius: 0.5rem;
+}
+
+button {
+    background-color: #f6a016;
+    margin: 1rem 1rem;
+    color: #FFFFFF;
+    border-color: #f6a016;
+}
+
+button:hover {
+    background-color: #c119f0;
+    border-color: #c119f0;
+}
