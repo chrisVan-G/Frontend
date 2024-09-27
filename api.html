@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const PI = 3.1416;
+      console.log(PI);
+      // la constante no cambia de valor durante el flujo del programa para datos primitivos
+      let a;
+      // const Siete;
+      a = 'Pepe';
+      console.log(a);
+
+      // para datos compuestos si puedo utilizar const aunque los datos cambien
+
+      const Persona = {
+        nombre: 'Paco',
+        edad: 26,
+      };
+      console.log(Persona);
+      Persona.altura = 1.9;
+      console.log(Persona);
+
+      const animales = ['perro', 'gato', 'lobo'];
+      console.log(animales);
+      animales.push('ballena');
+      console.log(animales);
+    </script>
+  </body>
+</html>

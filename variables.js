@@ -13,7 +13,8 @@ console.log(petCat, 'says', catSound);
 catSound = 'meow';
 console.log(petCat, 'now says', catSound);
 console.log();
-// scope var-global let-local(ambito de bloque)
+// scope var-global(ambito global) let-local(ambito de bloque)
+
 // Ambitos de bloque
 
 console.log('Uso de var');
@@ -25,7 +26,7 @@ console.log('Variable música antes del bloque', musica);
   console.log('Variable música dentro del bloque', musica);
 }
 console.log('Variable música después del bloque', musica);
-
+console.log('__________________________________________');
 console.log('Uso de let');
 let musica2 = 'Rock';
 console.log('Variable música antes del bloque', musica2);
