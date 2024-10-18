@@ -18,7 +18,7 @@ house['rooms'] = 3;
 house['color'] = 'beige';
 house['priceUSD'] = 12345;
 console.log(house);
-console.log(house.color);
+console.log('The house color is:', house.color);
 
 //Al usar la notación de corchetes, simplemente encierro la clave de cada propiedad como una cadena, dentro de comillas simples o dobles, al igual que con las cadenas normales
 
@@ -71,3 +71,5 @@ moto.LucesOn();
 
 moto['Kilometraje'] = 98500;
 console.log(moto);
+
+// propiedades/atributos - funciones/métodos
