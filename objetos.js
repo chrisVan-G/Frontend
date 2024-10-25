@@ -18,7 +18,7 @@ house['rooms'] = 3;
 house['color'] = 'beige';
 house['priceUSD'] = 12345;
 console.log(house);
-console.log('The house color is:', house.color);
+console.log('The house color is', house.color);
 
 //Al usar la notación de corchetes, simplemente encierro la clave de cada propiedad como una cadena, dentro de comillas simples o dobles, al igual que con las cadenas normales
 
@@ -73,3 +73,61 @@ moto['Kilometraje'] = 98500;
 console.log(moto);
 
 // propiedades/atributos - funciones/métodos
+
+// Más sobre objetos
+
+const obj = {}; // Un objeto es una colección de claves valor
+
+console.log('-----------------------------------------------');
+
+obj.nombre = 'Copito';
+obj.animal = 'perro';
+obj.edad = 1;
+obj.pasatiempos = ['morder', 'ladrar', 'orinar', 'defecar'];
+obj.entrenado = false;
+obj.raza = 'terrier';
+obj.cuerpo = {
+  patas: 4,
+  orejas: 2,
+  color: 'blanco',
+};
+
+obj.ladrar = function () {
+  console.log('guau guau...');
+};
+
+console.log(obj);
+
+// Se accede a los valores con notación de puntos o de corchetes
+
+console.log(
+  'El nombre de mi perro es',
+  obj['nombre'],
+  'y tiene',
+  obj['edad'],
+  'año'
+);
+
+console.log('Mi perro es de raza', obj.raza);
+console.log(
+  'Mi perro acostumbra',
+  obj.pasatiempos[1],
+  'cuando llaman a la puerta'
+);
+console.log(
+  'cuando mi perro esta alegre, sube sus',
+  obj.cuerpo.orejas,
+  'orejas'
+);
+obj.ladrar();
+
+obj.saltar = function () {
+  console.log(`Se impulsa con sus ${this.cuerpo.patas} patas`);
+};
+// La palabra reservada this hace referencia al objeto en el cual se encuentra
+obj.saltar();
+
+console.log(Object.keys(obj));
+console.log(Object.values(obj));
+console.log(obj.hasOwnProperty('raza'));
+console.log(obj.hasOwnProperty('correr'));
