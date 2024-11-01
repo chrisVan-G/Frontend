@@ -21,13 +21,19 @@ console.log();
 
 console.log('Resultado operdores lógicos');
 console.log();
-//Operador lógico NOT: !
+//Operador lógico NOT: ! niega, lo que es verdadero lo vuelve falso y visceversa
 console.log(!true);
-console.log(a == c || c - 4 == a); //Operador lógico OR: ||
+console.log(a == c || c - 4 == a); //Operador lógico OR: || con que una de las condiciones se cumpla Or validará
 console.log(b != c); //El operador de desigualdad: !=
-console.log(a && b == c); //Operador lógico AND: &&
+console.log(a && b == c); //Operador lógico AND: && todas las condiciones deben cumplirse
 
 // Operador de igualdad estricta (===)
+
+/*
+= asignación de variables 
+== comparación de valores
+=== comparación de valores y tipo de dato
+*/
 
 console.log(100 == '100');
 console.log(100 === '100'); //Compara el valor y tipo de dato
@@ -41,7 +47,24 @@ let i = 16;
 i += 5;
 console.log(i);
 
-//El operador de asignación de concatenación: += (es el mismo que el anterior. Abordaremos más profundamente esto más adelante)
+// El operador de asignación de concatenación: += (es el mismo que el anterior. Abordaremos más profundamente esto más adelante)
 
-//Concatenacion
+// Concatenacion
 console.log('Inter' + 'net');
+
+// Incremento y decremento
+
+let k = 1;
+k += 2;
+k -= 1;
+k /= 2;
+k *= 4;
+console.log(k);
+
+// Operador unario, incremento y decremento por unidad
+
+k++; // Recomendada
+k--; // Recomendada
+++k;
+--k;
+console.log(k);
