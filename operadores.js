@@ -23,8 +23,8 @@ console.log('Resultado operdores lógicos');
 console.log();
 //Operador lógico NOT: ! niega, lo que es verdadero lo vuelve falso y visceversa
 console.log(!true);
-console.log(a == c || c - 4 == a); //Operador lógico OR: || con que una de las condiciones se cumpla Or validará
-console.log(b != c); //El operador de desigualdad: !=
+console.log(a == c || c - 4 == a); //Operador lógico OR: || Cuando  tengo 2 o más condiciones con que una de las condiciones se cumpla Or validará
+console.log(b != c); //El operador de desigualdad NOT: !=
 console.log(a && b == c); //Operador lógico AND: && todas las condiciones deben cumplirse
 
 // Operador de igualdad estricta (===)
@@ -68,3 +68,9 @@ k--; // Recomendada
 ++k;
 --k;
 console.log(k);
+
+// Aclaraciones
+
+let y = 2;
+y++;
+console.log(y++); // Dentro del console imprime la variable y desprecia el incrementro

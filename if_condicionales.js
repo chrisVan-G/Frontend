@@ -24,7 +24,7 @@ if (num % 2 == 0) {
 
 //Si necesito evaluar más  condiciones utilizo else if
 
-let hora = 22;
+let hora = 15;
 
 if (hora >= 0 && hora <= 5) {
   console.log('Dejame dormir');
@@ -46,4 +46,10 @@ if (hora < 6) {
   console.log('Buenas noches');
 }
 
-// 0:20:00
+// Operador ternario (condicion)?verdadero:falso
+
+console.log('Operador ternario');
+
+let edad = 9;
+let eresMayor = edad >= 18 ? 'Eres mayor de edad' : 'Eres menor de edad';
+console.log(eresMayor);
