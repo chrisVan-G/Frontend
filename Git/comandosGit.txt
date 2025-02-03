@@ -58,15 +58,13 @@ git config --global --unset alias.nombreDelAlias
 	f = fetch
 	l = log --oneline --decorate --all --graph
 	cm = checkout master
-	ch = checkout home
 	pm = push -u origin master
-	ph = push -u origin home
 	um = pull origin master
-	uh = pull origin home
 	s = status -s -b
 	sh = stash
 	u = add -u
 	t = tag
+	b = branch
 
 Hoja de trucos de Git
 https://education.github.com/git-cheat-sheet-education.pdf
