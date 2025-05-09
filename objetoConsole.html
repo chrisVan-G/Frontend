@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Objeto console
+
+      console.log(console);
+      console.error('Esto es un error');
+      console.warn('Esto es un aviso');
+      console.info('Esto es un mensaje informativo');
+      console.log(
+        'Esto es un registro de lo que ha pasado en nuestra aplicación '
+      );
+
+      let nombre = 'Sofia';
+      apellido = 'Mesa';
+      edad = 41;
+
+      console.log(nombre);
+      console.log(apellido);
+      console.log(edad);
+      console.log(nombre, apellido, edad);
+      console.log(
+        `Hola mi nombre es ${nombre} ${apellido} y tengo ${edad} años`
+      );
+      console.log(
+        `Hola mi nombre es %s %s y tengo %d años`,
+        nombre,
+        apellido,
+        edad
+      );
+
+      console.clear();
+      console.log(window);
+      console.log(document);
+      console.dir(window);
+      console.dir(document);
+      console.clear();
+
+      console.group('Cursos');
+      console.log('JS');
+      console.log('React JS');
+      console.log('Node JS');
+      console.groupEnd('Cursos');
+
+      console.clear();
+
+      console.log(console);
+      console.table(Object.entries(console).sort()); //Con sort() se ordenó la tabla alfabeticamente
+
+      console.clear();
+
+      const numeros = [1, 2, 3, 4, 5];
+      const vocales = ['a', 'e', 'i', 'o', 'u'];
+
+      console.table(numeros);
+      console.table(vocales);
+
+      const perro = {
+        nombre: 'Copito',
+        raza: 'Terrier',
+        color: 'Blanco',
+        edad: 2,
+      };
+
+      console.table(perro);
+      console.clear();
+
+      console.time('Cuánto tiempo tarda mi código');
+
+      const arreglo = Array(1000000);
+
+      for (let i = 0; i < arreglo.length; i++) {
+        arreglo[i] = i;
+      }
+      console.timeEnd('Cuánto tiempo tarda mi código');
+
+      //   console.log(arreglo);
+
+      console.clear();
+
+      for (let i = 0; i <= 100; i++) {
+        console.count('Código for');
+        console.log(i);
+      }
+
+      console.clear();
+
+      let x = 5;
+      y = 4;
+
+      pruebaXY = 'Se espera que X siempre sea menor que Y';
+      // Si la prueba se ejecuta donde X sea menor a Y no muestra nada en consola, pero si X es mayor que Y imprime la falla
+      console.assert(x < y, { x, y, pruebaXY });
+    </script>
+  </body>
+</html>

@@ -81,3 +81,4 @@ function testBracketsDynamicAccess() {
 testBracketsDynamicAccess();
 
 //Notará que a veces el valor que se obtiene es 15 y, a veces, orange
+//For of me permite recorrer cualquier objeto que sea iterable
